@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ForeverUs 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video autoplay muted loop id="bgVideo">
+    <source src="assets/13536351-hd_1920_1080_25fps.mp4" type="video/mp4" />
+    <img src="assets/bg.jpg" alt="Love Background" />
+  </video>
+
+  <!-- Floating Hearts Container -->
+  <div class="hearts-container"></div>
+
+  <div class="container">
+    <h1 class="heartbeat">💑 Forever Us 💖</h1>
+    <p class="fade-in">Hey love, I have something for you... 💌</p>
+    <button onclick="revealMessage()">✨ Tap to Reveal ✨</button>
+
+    <div class="hidden-message" id="hiddenMessage">
+      <p id="typewriter"></p>
+    </div>
+  </div>
+
+  <!-- Music Toggle -->
+  <button id="musicToggle">🎵 Play Music</button>
+  <audio id="bgMusic" loop>
+    <source src="assets/music.mp3" type="audio/mp3" />
+  </audio>
+
+  <!-- Surprise Modal -->
+  <div id="surpriseModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>You are the most precious part of my life 💖</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
